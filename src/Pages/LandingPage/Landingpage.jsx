@@ -6,6 +6,7 @@ import MarqueeSection from '../../Components/Marquee/MarqueeSection'
 const Landingpage = () => {
   return (
     <div>
+      
         <Herosection/>
         <MarqueeSection/>
         <Banner/>

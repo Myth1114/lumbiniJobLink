@@ -1,13 +1,16 @@
 import styled, { css } from "styled-components";
+import { animateLeft, fadeInOut } from "../GlobalStyles/globalstyles";
 
 export const defaultIcon = css`
   align-self: end;
   border-radius: 1rem;
   padding: 0.8rem;
+  animation:${fadeInOut} 2.5s linear;
 `;
 export const defaultImgContainer = css`
   width: 15rem;
   border-radius: 1rem;
+  
 `;
 
 export const HeroSection = styled.div`
@@ -38,12 +41,15 @@ export const RightElement = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  
   @media (max-width: 650px) {
     margin-top: 2rem;
   }
 `;
 export const Moto = styled.h1`
   font-size: 3rem;
+  animation:${animateLeft} 2.5s linear;
+
   @media (min-width:768px){
     font-size:4rem;
   }
@@ -53,8 +59,21 @@ export const Description = styled.p`
   text-align:justify;
 `;
 export const ImgContainer = styled.div`
+position:relative;
   background-color: #e9e2a3;
   ${defaultImgContainer}
+  &:after{
+    position:absolute;
+    content:"Companies across industries";
+    right: -45%;
+    top: 7%;
+    width:auto;
+    background-color:#ffffff;
+    padding:.8rem;
+    border-radius: .3rem;
+    
+  }
+  
 `;
 export const ImgContainer2 = styled.div`
   background-color: #8ed1fc;
@@ -63,6 +82,7 @@ export const ImgContainer2 = styled.div`
 export const RightElementContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  
 `;
 
 export const Icon = styled.div`

@@ -1,21 +1,44 @@
-import styled from 'styled-components'
+import styled, { keyframes } from "styled-components";
 
+export const fadeInOut = keyframes`
+from {
+  scale:.6;
+}
+to {
+  scale:1;
+}
+`;
+
+export const animateLeft = keyframes`
+ 0%{
+  transform:translateX(-250px);
+  opacity:0;
+ }
+ 100%{
+  
+  opacity:1
+ }
+`;
+export const fadeIn=keyframes`
+ from {opacity:0;, scale:.8}
+ to {opacity:1, scale:1;}
+`
 export const Button = styled.button`
   position: relative;
-  background-color: #35797B;
+  background-color: #35797b;
   color: #fff;
   font-size: 0.9em;
   // margin: 1em;
   padding: 0.9em 1.5em;
   border: none;
-  border-radius:.8rem;
+  border-radius: 0.8rem;
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  &:hover{
-    opacity:.8;
+  &:hover {
+    opacity: 0.8;
   }
-`
+`;
 export const Button2 = styled(Button)`
   background: #fd5f00;
   color: #fff;
@@ -25,7 +48,7 @@ export const Button2 = styled(Button)`
     border: 1px solid #fd5f00;
     transition: all 0.3s ease-in-out;
   }
-`
+`;
 export const Button3 = styled(Button)`
   background: #fd5f00;
   color: #fff;
@@ -37,7 +60,7 @@ export const Button3 = styled(Button)`
     border: 1px solid #fd5f00;
     transition: all 0.3s ease-in-out;
   }
-`
+`;
 
 export const Container = styled.div`
   z-index: 1;
@@ -51,32 +74,37 @@ export const Container = styled.div`
     padding-right: 30px;
     padding-left: 30px;
   }
-`
+`;
 export const PrimaryHeading = styled.h1`
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
     text-align:center;
-    @media screen and (max-width: 600px) {
-      font-size: 2.7rem;
+    margin:2rem 1rem;
+    @media screen and (min-width: 900px) {
+      font-size: 4rem;
+      margin:2rem 20rem ;
+    }
+    @media screen and (min-width:1024px){
+      margin:2rem 6rem;
     }
 }
 
-`
-export const CallButton=styled.a`
-position: relative;
-  background-color: #35797B;
+`;
+export const CallButton = styled.a`
+  position: relative;
+  background-color: #35797b;
   color: #fff;
   font-size: 0.9em;
   // margin: 1em;
   padding: 0.9em 1.5em;
   border: none;
-  border-radius:.8rem;
+  border-radius: 0.8rem;
   outline: none;
   cursor: pointer;
-  white-space:nowrap;
+  white-space: nowrap;
   transition: all 0.3s ease-in-out;
-  &:hover{
-    opacity:.8;
+  &:hover {
+    opacity: 0.8;
   }
-`
+`;
