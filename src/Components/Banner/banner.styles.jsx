@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import {fadeIn} from '../GlobalStyles/globalstyles'
+import { fadeIn } from "../GlobalStyles/globalstyles";
 
 export const Para = styled.p`
   margin: 0 1rem;
   color: #717170;
   text-align: center;
-  animation:${fadeIn} linear;
-  animation-timeline:view();
-  @media(min-width:900px){
-    margin:0 20rem;
+  animation: ${fadeIn} linear;
+  animation-timeline: view();
+  @media (min-width: 900px) {
+    margin: 0 20rem;
   }
-  @media(min-width:1024px){
-    margin:0 6rem;
+  @media (min-width: 1024px) {
+    margin: 0 6rem;
   }
 `;
 export const Container = styled.div`
@@ -20,8 +20,6 @@ export const Container = styled.div`
   justify-items: stretch;
   gap: 1rem;
   margin: 1rem;
- 
-
   div:nth-child(1) {
     background: #f4ffd6;
   }
@@ -35,7 +33,7 @@ export const Container = styled.div`
 export const SectionElements = styled.div`
   background-color: #d6f5fa;
   padding: 1rem;
-  
+  border-radius: 1rem;
   > * {
     margin-top: 1rem;
   }

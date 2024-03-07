@@ -64,8 +64,8 @@ position:relative;
   ${defaultImgContainer}
   &:after{
     position:absolute;
-    content:"Companies across industries";
-    right: -45%;
+    content:"✅ Companies across industries";
+    right: -47%;
     top: 7%;
     width:auto;
     background-color:#ffffff;

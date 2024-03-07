@@ -44,3 +44,24 @@ img {
   object-fit: contain;
   aspect-ratio: 1/1;
 }
+summary {
+  padding: 1em;
+  font-size: 1.5rem;
+  background: #fafafa;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+transition:all .5s ease-in-out;
+  
+}
+summary::marker{
+  color: #35797b;
+}
+.content p{
+  margin-left: 2rem;
+  color: #717170;
+}
+/* summary:hover{
+background-color: #ffffff;
+} */

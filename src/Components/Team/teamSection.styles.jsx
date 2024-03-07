@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
 export const TeamContainer = styled.div`
-    background-color:#fff4ce;
-    @media (min-width: 800px){
-        padding:2rem 0;
-    }
-`
-
+  background-color: #fff4ce;
+  @media (min-width: 800px) {
+    padding: 2rem 0;
+  }
+`;
 
 export const Container = styled.div`
-
   margin: 4rem auto;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-    @media (min-width: 800px){
-        grid-template-columns: 1fr 1fr;
-        margin:6rem;
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    margin: 6rem;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
@@ -35,16 +36,16 @@ export const Column = styled.div`
   display: grid;
   align-items: center;
 
-  .Circle{
+  .Circle {
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: red;
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-//   z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    //   z-index: -1;
   }
   &:nth-child(1) .Circle {
     background-color: #00d084;
@@ -58,7 +59,7 @@ export const Column = styled.div`
   &:nth-child(4) .Circle {
     background-color: #f78da7;
   }
-   
+
   @media (min-width: 800px) {
     gap: 1rem;
   }
@@ -66,12 +67,13 @@ export const Column = styled.div`
 
 export const Card = styled.div`
   position: relative;
-  width: 200px;
+  width: 150px;
   height: 200px;
   overflow: hidden;
+  @media (min-width: 800px) {
+    width: 200px;
+  }
 `;
-
-
 
 export const Image = styled.img`
   position: absolute;
@@ -87,15 +89,14 @@ export const Image = styled.img`
 `;
 
 export const RightContent = styled.div`
-margin:1rem;
+  margin: 1rem;
 `;
 
 export const Contents = styled.div`
-
-display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   & > * {
     margin-bottom: 1rem;
   }
@@ -104,15 +105,15 @@ display: flex;
 export const Title = styled.h1`
   text-align: center;
   font-size: 2.5rem;
-  @media (min-width:800px){
-    font-size:3.5rem;
+  @media (min-width: 800px) {
+    font-size: 3.5rem;
   }
 `;
 
 export const Para = styled.p`
   color: #717170;
   text-align: center;
-  @media (min-width:800px){
+  @media (min-width: 800px) {
     margin: 1rem 5rem;
   }
 `;
